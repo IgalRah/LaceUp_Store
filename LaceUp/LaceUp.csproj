@@ -1,0 +1,145 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Desing\Fonts\Fonts Magazine.txt" />
+    <None Remove="Desing\Fonts\Futura Condensed Extra Bold.otf" />
+    <None Remove="Desing\Fonts\Gotham-Black.otf" />
+    <None Remove="Desing\Fonts\Gotham-Bold.otf" />
+    <None Remove="Desing\Fonts\Gotham-BookItalic.otf" />
+    <None Remove="Desing\Fonts\Gotham-Font.zip" />
+    <None Remove="Desing\Fonts\Gotham-Light.otf" />
+    <None Remove="Desing\Fonts\Gotham-Thin.otf" />
+    <None Remove="Desing\Fonts\Gotham-ThinItalic.otf" />
+    <None Remove="Desing\Fonts\Gotham-UltraItalic.otf" />
+    <None Remove="Desing\Fonts\Gotham-XLight.otf" />
+    <None Remove="Desing\Fonts\Gotham-XLightItalic.otf" />
+    <None Remove="Desing\Fonts\GothamBold.ttf" />
+    <None Remove="Desing\Fonts\GothamBoldItalic.ttf" />
+    <None Remove="Desing\Fonts\GothamBook.ttf" />
+    <None Remove="Desing\Fonts\GothamBookItalic.ttf" />
+    <None Remove="Desing\Fonts\GothamLight.ttf" />
+    <None Remove="Desing\Fonts\GothamLightItalic.ttf" />
+    <None Remove="Desing\Fonts\GothamMedium.ttf" />
+    <None Remove="Desing\Fonts\GothamMediumItalic.ttf" />
+    <None Remove="Desing\Fonts\GothamMedium_1.ttf" />
+    <None Remove="Desing\Fonts\Nike-Font\Futura Condensed Extra Bold.otf" />
+    <None Remove="Desing\Fonts\SCRIPALT.ttf" />
+    <None Remove="Desing\Fonts\SCRIPTIN.ttf" />
+    <None Remove="Desing\Images\admin.png" />
+    <None Remove="Desing\Images\blurPhotos.png" />
+    <None Remove="Desing\Images\blurPhotosNew.png" />
+    <None Remove="Desing\Images\Linafinal!!!.png" />
+    <None Remove="Desing\Images\mainFinalPhoto.png" />
+    <None Remove="Desing\Images\mainstorePhoto3.png" />
+    <None Remove="Desing\Images\PaymantPgoto2.png" />
+    <None Remove="Desing\Images\SecondPhotoFinal.png" />
+    <None Remove="Desing\Images\Shoes\gym1.png" />
+    <None Remove="Desing\Images\Shoes\gym2.png" />
+    <None Remove="Desing\Images\Shoes\gym3.png" />
+    <None Remove="Desing\Images\Shoes\gym4.png" />
+    <None Remove="Desing\Images\Shoes\gym5.png" />
+    <None Remove="Desing\Images\Shoes\gym6.png" />
+    <None Remove="Desing\Images\Shoes\Jorden1.png" />
+    <None Remove="Desing\Images\Shoes\Jorden2.png" />
+    <None Remove="Desing\Images\Shoes\Jorden3.png" />
+    <None Remove="Desing\Images\Shoes\Jorden4.png" />
+    <None Remove="Desing\Images\Shoes\Jorden5.png" />
+    <None Remove="Desing\Images\Shoes\Jorden6.png" />
+    <None Remove="Desing\Images\Shoes\LifeStyle1.png" />
+    <None Remove="Desing\Images\Shoes\LifeStyle2.png" />
+    <None Remove="Desing\Images\Shoes\LifeStyle3.png" />
+    <None Remove="Desing\Images\Shoes\LifeStyle4.png" />
+    <None Remove="Desing\Images\Shoes\LifeStyle5.png" />
+    <None Remove="Desing\Images\Shoes\LifeStyle6.png" />
+    <None Remove="Desing\Images\Shoes\Walking1.png" />
+    <None Remove="Desing\Images\Shoes\Walking2.png" />
+    <None Remove="Desing\Images\Shoes\Walking3.png" />
+    <None Remove="Desing\Images\Shoes\Walking4.png" />
+    <None Remove="Desing\Images\Shoes\Walking5.png" />
+    <None Remove="Desing\Images\Shoes\Walking6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Desing\Fonts\Fonts Magazine.txt" />
+    <Resource Include="Desing\Fonts\Futura Condensed Extra Bold.otf" />
+    <Resource Include="Desing\Fonts\Gotham-Black.otf" />
+    <Resource Include="Desing\Fonts\Gotham-Bold.otf" />
+    <Resource Include="Desing\Fonts\Gotham-BookItalic.otf" />
+    <Resource Include="Desing\Fonts\Gotham-Font.zip" />
+    <Resource Include="Desing\Fonts\Gotham-Light.otf" />
+    <Resource Include="Desing\Fonts\Gotham-Thin.otf" />
+    <Resource Include="Desing\Fonts\Gotham-ThinItalic.otf" />
+    <Resource Include="Desing\Fonts\Gotham-UltraItalic.otf" />
+    <Resource Include="Desing\Fonts\Gotham-XLight.otf" />
+    <Resource Include="Desing\Fonts\Gotham-XLightItalic.otf" />
+    <Resource Include="Desing\Fonts\GothamBold.ttf" />
+    <Resource Include="Desing\Fonts\GothamBoldItalic.ttf" />
+    <Resource Include="Desing\Fonts\GothamBook.ttf" />
+    <Resource Include="Desing\Fonts\GothamBookItalic.ttf" />
+    <Resource Include="Desing\Fonts\GothamLight.ttf" />
+    <Resource Include="Desing\Fonts\GothamLightItalic.ttf" />
+    <Resource Include="Desing\Fonts\GothamMedium.ttf" />
+    <Resource Include="Desing\Fonts\GothamMediumItalic.ttf" />
+    <Resource Include="Desing\Fonts\GothamMedium_1.ttf" />
+    <Resource Include="Desing\Fonts\Nike-Font\Futura Condensed Extra Bold.otf" />
+    <Resource Include="Desing\Fonts\SCRIPALT.ttf" />
+    <Resource Include="Desing\Fonts\SCRIPTIN.ttf" />
+    <Resource Include="Desing\Images\admin.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentWPF" Version="0.10.2" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Desing\Images\blurPhotos.png" />
+    <Resource Include="Desing\Images\blurPhotosNew.png" />
+    <Resource Include="Desing\Images\Linafinal!!!.png" />
+    <Resource Include="Desing\Images\mainFinalPhoto.png" />
+    <Resource Include="Desing\Images\mainstorePhoto3.png" />
+    <Resource Include="Desing\Images\PaymantPgoto2.png" />
+    <Resource Include="Desing\Images\SecondPhotoFinal.png" />
+    <Resource Include="Desing\Images\Shoes\gym1.png" />
+    <Resource Include="Desing\Images\Shoes\gym2.png" />
+    <Resource Include="Desing\Images\Shoes\gym3.png" />
+    <Resource Include="Desing\Images\Shoes\gym4.png" />
+    <Resource Include="Desing\Images\Shoes\gym5.png" />
+    <Resource Include="Desing\Images\Shoes\gym6.png" />
+    <Resource Include="Desing\Images\Shoes\Jorden1.png" />
+    <Resource Include="Desing\Images\Shoes\Jorden2.png" />
+    <Resource Include="Desing\Images\Shoes\Jorden3.png" />
+    <Resource Include="Desing\Images\Shoes\Jorden4.png" />
+    <Resource Include="Desing\Images\Shoes\Jorden5.png" />
+    <Resource Include="Desing\Images\Shoes\Jorden6.png" />
+    <Resource Include="Desing\Images\Shoes\LifeStyle1.png" />
+    <Resource Include="Desing\Images\Shoes\LifeStyle2.png" />
+    <Resource Include="Desing\Images\Shoes\LifeStyle3.png" />
+    <Resource Include="Desing\Images\Shoes\LifeStyle4.png" />
+    <Resource Include="Desing\Images\Shoes\LifeStyle5.png" />
+    <Resource Include="Desing\Images\Shoes\LifeStyle6.png" />
+    <Resource Include="Desing\Images\Shoes\Walking1.png" />
+    <Resource Include="Desing\Images\Shoes\Walking2.png" />
+    <Resource Include="Desing\Images\Shoes\Walking3.png" />
+    <Resource Include="Desing\Images\Shoes\Walking4.png" />
+    <Resource Include="Desing\Images\Shoes\Walking5.png" />
+    <Resource Include="Desing\Images\Shoes\Walking6.png" />
+  </ItemGroup>
+
+</Project>

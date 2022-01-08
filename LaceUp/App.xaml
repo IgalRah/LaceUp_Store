@@ -1,0 +1,39 @@
+﻿<Application x:Class="LaceUp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml"
+             xmlns:local="clr-namespace:LaceUp"
+             xmlns:viewModel="clr-namespace:LaceUp.MVVM.ViewModel"
+             xmlns:view="clr-namespace:LaceUp.MVVM.View">
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:LifeStyleViewModel}">
+                <view:LifeStyle/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:JordanViewModel}">
+                <view:JordanView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:GymViewModel}">
+                <view:GymView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:WalkingViewModel}">
+                <view:WalkingView/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+        
+    </Application.Resources>
+</Application>
