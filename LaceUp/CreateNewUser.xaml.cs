@@ -39,8 +39,8 @@ namespace LaceUp
                     SqlCommand sqlCmd = new()
                     {
                         Connection = sqlCon,
-                        CommandText = "SpAddUser",
-                        CommandType = CommandType.StoredProcedure
+                        CommandText = "Insert into Users(Email,Username,Password) values (@EmailBox,@UserName,@Password)",
+                        CommandType = CommandType.Text
                     };
 
                     sqlCmd.Parameters.AddWithValue("@EmailBox", EmailBox.Text);
