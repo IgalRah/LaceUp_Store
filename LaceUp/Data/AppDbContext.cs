@@ -14,6 +14,7 @@ namespace LaceUp.Data
 
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<ShoppingBag> ShoppingBag { get; set; }
+        public virtual DbSet<ShoesInfo> ShoeInffo { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

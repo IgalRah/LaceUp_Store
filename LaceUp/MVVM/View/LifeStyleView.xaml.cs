@@ -30,10 +30,10 @@ namespace LaceUp.MVVM.View
                     SqlCommand sqlCmd = new SqlCommand();
 
                     sqlCmd.CommandType = CommandType.Text;
-                    sqlCmd.CommandText = $"SET IDENTITY_INSERT [ShoppingBag] ON " +
-                        " insert into [ShoppingBag](Id, Shoe,Price) values (1, 'Blazer Mid `77',150) " +
-                        " SET IDENTITY_INSERT [ShoppingBag] OFF";
-
+                    sqlCmd.CommandText = "INSERT INTO ShoppingBag(Shoe,Price)" +
+                                       " SELECT ShoeName, ShoePrice" +
+                                       " FROM ShoeInffo" +
+                                       " WHERE ShoeName = 'Blazer Mid `77'";
                     sqlCmd.Connection = sqlCon;
 
                     sqlCmd.ExecuteNonQuery();
@@ -59,10 +59,10 @@ namespace LaceUp.MVVM.View
                     SqlCommand sqlCmd = new SqlCommand();
 
                     sqlCmd.CommandType = CommandType.Text;
-                    sqlCmd.CommandText = $"SET IDENTITY_INSERT [ShoppingBag] ON " +
-                        " insert into [ShoppingBag](Id, Shoe,Price) values (2, 'Air Presto Premium',220) " +
-                        " SET IDENTITY_INSERT [ShoppingBag] OFF";
-
+                    sqlCmd.CommandText = "INSERT INTO ShoppingBag(Shoe,Price)" +
+                                       " SELECT ShoeName, ShoePrice" +
+                                       " FROM ShoeInffo" +
+                                       " WHERE ShoeName = 'Air Presto Premium'";
                     sqlCmd.Connection = sqlCon;
 
                     sqlCmd.ExecuteNonQuery();
@@ -88,10 +88,11 @@ namespace LaceUp.MVVM.View
                     SqlCommand sqlCmd = new SqlCommand();
 
                     sqlCmd.CommandType = CommandType.Text;
-                    sqlCmd.CommandText = $"SET IDENTITY_INSERT [ShoppingBag] ON " +
-                        " insert into [ShoppingBag](Id, Shoe,Price) values (3, 'Blazer Low `77',120) " +
-                        " SET IDENTITY_INSERT [ShoppingBag] OFF";
-
+                    sqlCmd.CommandText = "INSERT INTO ShoppingBag(Shoe,Price)" +
+                                       " SELECT ShoeName, ShoePrice" +
+                                       " FROM ShoeInffo" +
+                                       " WHERE ShoeName = 'Blazer Low `77'";
+                    sqlCmd.Connection = sqlCon;
                     sqlCmd.Connection = sqlCon;
 
                     sqlCmd.ExecuteNonQuery();
@@ -117,10 +118,10 @@ namespace LaceUp.MVVM.View
                     SqlCommand sqlCmd = new SqlCommand();
 
                     sqlCmd.CommandType = CommandType.Text;
-                    sqlCmd.CommandText = $"SET IDENTITY_INSERT [ShoppingBag] ON " +
-                        " insert into [ShoppingBag](Id, Shoe,Price) values (4, 'Air Force 1 Mid Jewel',250) " +
-                        " SET IDENTITY_INSERT [ShoppingBag] OFF";
-
+                    sqlCmd.CommandText = "INSERT INTO ShoppingBag(Shoe,Price)" +
+                                       " SELECT ShoeName, ShoePrice" +
+                                       " FROM ShoeInffo" +
+                                       " WHERE ShoeName = 'Air Force 1 Mid Jewel'";
                     sqlCmd.Connection = sqlCon;
 
                     sqlCmd.ExecuteNonQuery();
@@ -146,10 +147,10 @@ namespace LaceUp.MVVM.View
                     SqlCommand sqlCmd = new SqlCommand();
 
                     sqlCmd.CommandType = CommandType.Text;
-                    sqlCmd.CommandText = $"SET IDENTITY_INSERT [ShoppingBag] ON " +
-                        " insert into [ShoppingBag](Id, Shoe,Price) values (5, 'Blazer Mid `77',150) " +
-                        " SET IDENTITY_INSERT [ShoppingBag] OFF";
-
+                    sqlCmd.CommandText = "INSERT INTO ShoppingBag(Shoe,Price)" +
+                                       " SELECT ShoeName, ShoePrice" +
+                                       " FROM ShoeInffo" +
+                                       " WHERE ShoeName = 'Blazer Mid `77'";
                     sqlCmd.Connection = sqlCon;
 
                     sqlCmd.ExecuteNonQuery();
@@ -175,10 +176,10 @@ namespace LaceUp.MVVM.View
                     SqlCommand sqlCmd = new SqlCommand();
 
                     sqlCmd.CommandType = CommandType.Text;
-                    sqlCmd.CommandText = $"SET IDENTITY_INSERT [ShoppingBag] ON " +
-                        " insert into [ShoppingBag](Id, Shoe,Price) values (6, 'Air Force 1 High Sculpt',200) " +
-                        " SET IDENTITY_INSERT [ShoppingBag] OFF";
-
+                    sqlCmd.CommandText = "INSERT INTO ShoppingBag(Shoe,Price)" +
+                                       " SELECT ShoeName, ShoePrice" +
+                                       " FROM ShoeInffo" +
+                                       " WHERE ShoeName = 'Air Force 1 High Sculpt'";
                     sqlCmd.Connection = sqlCon;
 
                     sqlCmd.ExecuteNonQuery();

@@ -46,8 +46,8 @@
 
 
 
-        <TextBlock Text="E-Mail:"
-                   Foreground="White" Margin="90,138,19,-133"
+        <TextBlock Text="E-mail:"
+                   Foreground="White" Margin="90,152,19,-147"
                    FontFamily="Desing\Fonts\#Gotham"
                    FontWeight="Normal"
                    FontSize="15"
@@ -56,7 +56,7 @@
 
         <TextBox Name="EmailBox"
                  Grid.ColumnSpan="2"
-                 Margin="90,159,90,-153" 
+                 Margin="90,173,90,-167" 
                  Grid.Row="1">
 
         </TextBox>
@@ -64,7 +64,7 @@
 
 
         <TextBlock Text="User name:"
-                   Foreground="White" Margin="90,202,19,-197"
+                   Foreground="White" Margin="90,216,19,-211"
                    FontFamily="Desing\Fonts\##Gotham"
                    FontWeight="Normal"
                    FontSize="15"
@@ -73,26 +73,26 @@
 
         <TextBox Name="userNameBox"
                  Grid.ColumnSpan="2"
-                 Margin="90,222,90,-217" 
+                 Margin="90,236,90,-231" 
                  Grid.Row="1">
         </TextBox>
 
 
 
         <TextBlock Text="Password:"
-                   Foreground="White" Margin="90,263,27,-258" FontFamily="Desing\Fonts\#Gotham" FontWeight="Normal" FontSize="15" Grid.Row="1"/>
+                   Foreground="White" Margin="90,277,27,-272" FontFamily="Desing\Fonts\#Gotham" FontWeight="Normal" FontSize="15" Grid.Row="1"/>
 
         <PasswordBox Name="passwordBox"
                      Grid.ColumnSpan="2"
-                     Margin="90,283,90,-278" Grid.Row="1">
+                     Margin="90,297,90,-292" Grid.Row="1">
         </PasswordBox>
 
 
         <Button Content="Sign up"
                     Foreground="Black"
-                    FontWeight="Normal" Margin="142,337,0,-350"
+                    FontWeight="Normal" Margin="-69,356,0,-369"
                     FontSize="15"
-                    FontFamily="Desing\Fonts\#Gotham Black" Width="106" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" FontStyle="Normal" FontStretch="Normal" Click="SignUpButton" Grid.Row="1" Grid.ColumnSpan="2">
+                    FontFamily="Desing\Fonts\#Gotham Black" Width="139" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" FontStyle="Normal" FontStretch="Normal" Click="SignUpButton" Grid.Row="1" Grid.Column="1" d:LayoutOverrides="HorizontalAlignment">
 
             <Button.RenderTransform>
                 <TransformGroup>
@@ -121,97 +121,6 @@
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Width="Auto" Height="28"
                             CornerRadius="15"
-                            Background="{TemplateBinding Background}">
-                        <ContentPresenter VerticalAlignment="Center"
-                                              HorizontalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-
-        <Image Source="Desing\Images\Linafinal!!!.png"
-               Margin="0,394,70,-426" Grid.Row="1" Stretch="Fill" Opacity="0.8"/>
-
-        <Image Source="Desing\Images\Linafinal!!!.png" Margin="0,394,0,-426" Grid.Row="1" Stretch="Fill" Opacity="0.8" Grid.Column="1" HorizontalAlignment="Right" Width="125"/>
-
-        <TextBlock Text="or sign up using:"
-                   Foreground="White"
-                   FontSize="15"
-                   Grid.ColumnSpan="2" Margin="130,411,130,-404" Grid.Row="1" FontFamily="Desing\Fonts\#Gotham" FontWeight="Bold"/>
-
-
-        <Button Content="Facebook"
-                    Foreground="White"
-                    FontWeight="Normal" Margin="34,450,0,-462"
-                    FontSize="12"
-                    FontFamily="Desing\Fonts\#" Width="147" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" FontStyle="Normal" FontStretch="Normal" Click="facebookButton" Grid.Row="1">
-
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="-0.171"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="-0.08"/>
-                </TransformGroup>
-            </Button.RenderTransform>
-
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="TextElement.FontFamily" Value="Desing\Fonts\#Gotham-Black"/>
-                    <Setter Property="Background" Value="#4267B2"/>
-                    <Setter Property="Cursor" Value="Hand"/>
-
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="#D4AF37"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Width="Auto" Height="28"
-                            Background="{TemplateBinding Background}">
-                        <ContentPresenter VerticalAlignment="Center"
-                                              HorizontalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-
-        <Button Content="Google"
-                    Foreground="White"
-                    FontWeight="Normal" Margin="15,447,0,-464"
-                    FontSize="13"
-                    FontFamily="Desing\Fonts\#" Width="147" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" FontStyle="Normal" FontStretch="Normal" Click="googleButton" Grid.Row="1" Grid.Column="1">
-
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="-0.171"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="-0.08"/>
-                </TransformGroup>
-            </Button.RenderTransform>
-
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="TextElement.FontFamily" Value="Desing\Fonts\#Gotham-Black"/>
-                    <Setter Property="Background" Value="#DB4437"/>
-                    <Setter Property="Cursor" Value="Hand"/>
-
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="#D4AF37"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Width="Auto" Height="28"
                             Background="{TemplateBinding Background}">
                         <ContentPresenter VerticalAlignment="Center"
                                               HorizontalAlignment="Center"/>
@@ -276,10 +185,10 @@
             <StackPanel Orientation="Horizontal" Margin="0,0,13,0"/>
 
         </Grid>
-        <TextBlock Text="Password must contain &#xA;min 1 symbol [~?#]"
+        <TextBlock Text="Password must contain Capital letter &#xA;and at least one number"
             Foreground="White"
             FontSize="10"
-            Margin="-57,308,136,-314" Grid.Row="1" FontFamily="Desing\Fonts\#Gotham" Grid.Column="1"/>
+            Margin="90,322,90,-321" Grid.Row="1" FontFamily="Desing\Fonts\#Gotham" d:LayoutOverrides="HorizontalAlignment" Grid.ColumnSpan="2"/>
 
 
     </Grid>

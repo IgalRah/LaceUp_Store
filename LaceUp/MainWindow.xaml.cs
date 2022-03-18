@@ -36,28 +36,43 @@ namespace LaceUp
                 {
                     sqlCon.Open();
                 }
-                String query = "SELECT COUNT(1) FROM Users WHERE UserName=@UserName AND Password=@Password";
 
-                SqlCommand sqlCmd = new(query, sqlCon);
+                String queryUsername = "SELECT COUNT(1) FROM Users WHERE UserName=@UserName AND Password=@Password";
+                String queryMail = "SELECT COUNT(1) FROM Users WHERE Email=@Email AND Password=@Password";
+
+                SqlCommand sqlCmd = new(queryUsername, sqlCon);
+                SqlCommand sqlCmdMail = new(queryMail, sqlCon);
+
                 sqlCmd.CommandType = CommandType.Text;
+                sqlCmdMail.CommandType = CommandType.Text;
 
+                // Declare UserName
                 sqlCmd.Parameters.AddWithValue("@UserName", usernameInput.Text);
                 sqlCmd.Parameters.AddWithValue("@Password", passwordInput.Password);
 
-                usernameInput.Clear();
-                passwordInput.Clear();
+                // Declare mail
+                sqlCmdMail.Parameters.AddWithValue("@Email", usernameInput.Text);
+                sqlCmdMail.Parameters.AddWithValue("@Password", passwordInput.Password);
 
-                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (count == 1)
+
+                int countUsername = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                int countMail = Convert.ToInt32(sqlCmdMail.ExecuteScalar());
+
+                if (countUsername == 1) // Check UserName
                 {
                     MenuScreen menuScreen = new();
                     menuScreen.Show();
-
+                    Close();
+                }
+                else if (countMail == 1) // Check mail
+                {
+                    MenuScreen menuScreen = new();
+                    menuScreen.Show();
                     Close();
                 }
                 else
                 {
-                    MessageBox.Show("Username or password is incorrect!");
+                    MessageBox.Show("You have entered invalid data!");
                 }
 
             }
@@ -82,7 +97,7 @@ namespace LaceUp
             Close();
         }
 
-        private void LoginAdminButton(object sender, RoutedEventArgs e)
+        private void LoginAdminButton(object sender, RoutedEventArgs e) //ADMIN LOGIN
         {
             SqlConnection sqlCon = new(strCon);
             try
@@ -91,26 +106,25 @@ namespace LaceUp
                 {
                     sqlCon.Open();
                 }
-                String query = "SELECT COUNT(1) FROM Users WHERE UserName=@Igal AND Password=@1998";
 
-                SqlCommand sqlCmd = new(query, sqlCon);
+                String queryUsername = "SELECT COUNT(1) FROM Users WHERE UserName=@Igal AND Password=@1998";
+
+                SqlCommand sqlCmd = new(queryUsername, sqlCon);
                 sqlCmd.CommandType = CommandType.Text;
 
                 sqlCmd.Parameters.AddWithValue("@Igal", usernameInput.Text);
                 sqlCmd.Parameters.AddWithValue("@1998", passwordInput.Password);
 
-                usernameInput.Clear();
-                passwordInput.Clear();
+                int countUser = Convert.ToInt32(sqlCmd.ExecuteScalar());
 
-                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (count == 1)
+                if (countUser == 1)
                 {
                     AdminWindow adminWindow = new();
                     adminWindow.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid data!");
+                    MessageBox.Show("You have entered invalid data!");
                 }
             }
             catch (Exception ex)
