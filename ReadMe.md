@@ -45,10 +45,8 @@ There are currently 2 more models (ShoppingBag ans User), each has unique Proper
     {
     
         public int Id { get; set; }
-
         [Required]
         public string Shoe { get; set; }
-
         [Required]
         public int Price { get; set; }
     }
@@ -56,7 +54,6 @@ There are currently 2 more models (ShoppingBag ans User), each has unique Proper
     public class User
     {
         public int UserID { get; set; }
-
         [Required]
         public string UserName { get; set; }
         [Required]
