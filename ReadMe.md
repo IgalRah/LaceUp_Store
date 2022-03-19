@@ -14,18 +14,19 @@ Upon Loading, the projects verify if the Database exists. If the database does n
 
 Predefined existing Users in the system :
 
-Admin user: igal
-Password: 1998
+Admin user: Admin
+Password: Admin123
 
-Regular User: igal
-Email address: igalrahmani@gmail.com
-Password: 123
+Regular User: User
+Email address: User@admin.com
+Password: User123
 
 
     4.Entities, Relations design and logic:
 The project implements EF TPT (Table-per-Type) inheritance model. Table-per-type inheritance uses a separate table in the database to maintain data for non-inherited properties and key properties for each type in the inheritance hierarchy.
 
 The main model for the products section is an class ShoesInfo:
+
     public class ShoesInfo
     {
         public int Id { get; set; }
@@ -42,6 +43,7 @@ There are currently 2 more models (ShoppingBag ans User), each has unique Proper
 
 public class ShoppingBag
     {
+    
         public int Id { get; set; }
 
         [Required]
