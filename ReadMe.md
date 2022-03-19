@@ -14,12 +14,12 @@ Upon Loading, the projects verify if the Database exists. If the database does n
 
 Predefined existing Users in the system :
 
-    Admin user: Admin
-    Password: Admin123
+Admin user: Admin
+Password: Admin123
 
-    Regular User: User
-    Email address: User@admin.com
-    Password: User123
+Regular User: User
+Email address: User@admin.com
+Password: User123
 
 
     4.Entities, Relations design and logic:
